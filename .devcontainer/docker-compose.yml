@@ -1,0 +1,22 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    init: true
+    entrypoint: /usr/local/share/entrypoint.sh
+    command: sleep infinity
+
+    volumes:
+      - ..:/workspace:cached
+      - v8-compile-cache:/tmp/v8-compile-cache
+      - pnpm-cache:/usr/local/share/pnpm/cache
+      - vscode-extensions:/home/vscode/.vscode-server/extensions
+      - bashhistory:/commandhistory
+
+volumes:
+  v8-compile-cache:
+  pnpm-cache:
+  vscode-extensions:
+  bashhistory:

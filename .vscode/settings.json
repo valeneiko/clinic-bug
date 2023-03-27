@@ -1,0 +1,89 @@
+{
+  "git.autofetch": true,
+  "jestrunner.disableCodeLens": true,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "terminal.integrated.scrollback": 10000,
+  "files.trimTrailingWhitespace": true,
+  "files.autoSaveDelay": 2000,
+  "files.exclude": {
+    ".pnpm-store": true,
+    "**/*.js.map": true,
+    ".eslintcache": true,
+    "isolate-*.log": true
+  },
+  "files.watcherExclude": {
+    "node_modules": true,
+    ".pnpm-store": true,
+    "**/*.js.map": true,
+    "dist": true,
+    "tmp": true,
+    "coverage": true,
+    "patches": true,
+    "junit.xml": true,
+    ".eslintcache": true,
+    ".clinic": true,
+    "*.log": true
+  },
+  "search.exclude": {
+    "dist": true,
+    "node_modules": true,
+    "**/*.js.map": true,
+    ".pnpm-store": true,
+    "**/pnpm-lock.yaml": true,
+    "tmp": true,
+    "coverage": true,
+    "patches": true,
+    "junit.xml": true,
+    ".eslintcache": true,
+    ".clinic": true,
+    "*.log": true
+  },
+  "javascript.preferences.importModuleSpecifier": "shortest",
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "typescript.suggest.paths": true,
+  "typescript.tsserver.maxTsServerMemory": 8192,
+  "editor.inlineSuggest.enabled": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.run": "onSave",
+  "eslint.packageManager": "pnpm",
+  "eslint.format.enable": true,
+  "eslint.lintTask.enable": true,
+  "eslint.alwaysShowStatus": true,
+  "eslint.workingDirectories": [
+    {
+      "directory": ".",
+      "changeProcessCWD": true
+    },
+  ],
+  "eslint.useESLintClass": true,
+  "eslint.codeActionsOnSave.rules": [
+    "!import/namespace",
+    "!import/no-deprecated",
+    "!import/no-cycle",
+    "*"
+  ],
+  "trailing-spaces.trimOnSave": true,
+  "cSpell.words": [],
+  "docthis.includeTypes": false,
+  "docthis.returnsTag": true,
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "terminal.integrated.env.linux": {
+    "PSQL_EDITOR": "code -w",
+    "PGDATABASE": "postgres"
+  },
+  "eslint.validate": [
+    "sql"
+  ],
+  "eslint.probe": [
+    "javascript",
+    "typescript",
+    "sql"
+  ],
+  "terminal.integrated.defaultProfile.linux": "bash",
+  "typescript.tsdk": "node_modules/typescript/lib"
+}

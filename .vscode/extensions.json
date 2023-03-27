@@ -1,0 +1,16 @@
+{
+  "recommendations": [
+    "nrwl.angular-console",
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "EditorConfig.EditorConfig",
+    "shardulm94.trailing-spaces",
+    "oouo-diogo-perdigao.docthis",
+    "streetsidesoftware.code-spell-checker",
+    "christian-kohler.npm-intellisense",
+    "christian-kohler.path-intellisense",
+    "humao.rest-client",
+    "eamodio.gitlens",
+    "ms-azuretools.vscode-docker"
+  ]
+}

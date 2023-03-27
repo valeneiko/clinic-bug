@@ -1,0 +1,21 @@
+ls:
+  .dir: snake_case
+  .ts: snake_case
+  ./**/__tests__:
+    .ts: snake_case
+    .unit.test.ts: snake_case
+    .integration.test.ts: snake_case
+  src/**/__tests__/__snapshots__:
+    .unit.test.ts.snap: snake_case
+
+ignore:
+  - .git
+  - .devcontainer
+  - .vscode
+  - node_modules
+  - .pnpm-store
+  - dist
+  - coverage
+  - patches
+  - typedefs
+

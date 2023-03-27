@@ -1,0 +1,9 @@
+**
+
+!./patches
+!./src
+!./typedefs
+!./package.json
+!./pnpm-lock.yaml
+!./tsconfig.json
+!./swcrc

@@ -1,0 +1,24 @@
+diff --git a/dist/transpilers/swc.js b/dist/transpilers/swc.js
+index eeddd4fbb2f18a7e8b20bb628d5f5c806ae20594..6a6fd953355f650f3f681c856fdce3b83e1f6868 100644
+--- a/dist/transpilers/swc.js
++++ b/dist/transpilers/swc.js
+@@ -32,14 +32,14 @@ function create(createOptions) {
+         swcInstance = swc;
+     }
+     // Prepare SWC options derived from typescript compiler options
+-    const { nonTsxOptions, tsxOptions } = createSwcOptions(config.options, nodeModuleEmitKind, swcInstance, swcDepName);
++    // const { nonTsxOptions, tsxOptions } = createSwcOptions(config.options, nodeModuleEmitKind, swcInstance, swcDepName);
+     const transpile = (input, transpileOptions) => {
+         const { fileName } = transpileOptions;
+-        const swcOptions = fileName.endsWith('.tsx') || fileName.endsWith('.jsx')
+-            ? tsxOptions
+-            : nonTsxOptions;
++        // const swcOptions = fileName.endsWith('.tsx') || fileName.endsWith('.jsx')
++        //     ? tsxOptions
++        //     : nonTsxOptions;
+         const { code, map } = swcInstance.transformSync(input, {
+-            ...swcOptions,
++            // ...swcOptions,
+             filename: fileName,
+         });
+         return { outputText: code, sourceMapText: map };
